@@ -23,13 +23,16 @@ class MainActivity : AppCompatActivity() {
         dialog.hide()
         infoViewModel.userInfoLiveData.observe(this, Observer {
             info.text = it
-            if(dialog.isShowing){
+        })
+        send_data.setOnClickListener {
+            infoViewModel.callInfo()
+        }
+        infoViewModel.loading.observe(this, Observer { loading ->
+            if (loading) {
+                dialog.show()
+            } else {
                 dialog.hide()
             }
         })
-        send_data.setOnClickListener {
-            dialog.show()
-            infoViewModel.callInfo()
-        }
     }
 }
