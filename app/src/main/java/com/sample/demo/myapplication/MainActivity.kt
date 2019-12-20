@@ -2,7 +2,6 @@
 
 package com.sample.demo.myapplication
 
-import android.app.ProgressDialog
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -16,11 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val dialog = ProgressDialog.show(
-            this, "",
-            "Loading. Please wait...", true
-        )
-        dialog.hide()
+        val dialog = ProgressbarFragment.newInstance(getString(R.string.uploading))
         infoViewModel.userInfoLiveData.observe(this, Observer {
             info.text = it
         })
@@ -29,9 +24,11 @@ class MainActivity : AppCompatActivity() {
         }
         infoViewModel.loading.observe(this, Observer { loading ->
             if (loading) {
-                dialog.show()
+                supportFragmentManager.let{
+                    dialog.show(it, "")
+                }
             } else {
-                dialog.hide()
+                dialog.dismiss()
             }
         })
     }

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">mvvm3</string>
+    <string name="app_name">mvvm4</string>
+    <string name="uploading">讀取中...</string>
 </resources>
