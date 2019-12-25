@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import kotlinx.android.synthetic.main.fragment_progressbar.*
 
-class ProgressbarFragment:DialogFragment() {
+class ProgressbarFragment : DialogFragment() {
     private lateinit var title: String
-    companion object{
+
+    companion object {
         const val TITLE = "title"
-        fun newInstance(title:String): ProgressbarFragment{
+        fun newInstance(title: String): ProgressbarFragment {
             val fragment = ProgressbarFragment()
             val args = Bundle().apply {
                 putString(TITLE, title)
@@ -20,6 +21,7 @@ class ProgressbarFragment:DialogFragment() {
             return fragment
         }
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         info_text.text = title
