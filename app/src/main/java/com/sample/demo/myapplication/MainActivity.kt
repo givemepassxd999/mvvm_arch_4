@@ -3,6 +3,7 @@
 package com.sample.demo.myapplication
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,11 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
         infoViewModel.loading.observe(this, Observer { loading ->
             if (loading) {
-                supportFragmentManager.let {
-                    dialog.show(it, "")
-                }
+                progress.visibility = View.VISIBLE
             } else {
-                dialog.dismiss()
+                progress.visibility = View.GONE
             }
         })
     }
