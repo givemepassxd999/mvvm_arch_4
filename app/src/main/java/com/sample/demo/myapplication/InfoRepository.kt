@@ -1,8 +1,6 @@
 package com.sample.demo.myapplication
 
 import io.reactivex.Single
-import tw.com.test.retrofitdemo.ApiService
-import tw.com.test.retrofitdemo.Posts
 
 
 class InfoRepository {

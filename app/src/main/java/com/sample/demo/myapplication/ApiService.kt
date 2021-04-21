@@ -1,4 +1,4 @@
-package tw.com.test.retrofitdemo
+package com.sample.demo.myapplication
 
 import io.reactivex.Single
 import retrofit2.http.GET
