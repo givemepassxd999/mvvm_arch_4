@@ -1,4 +1,4 @@
-package tw.com.test.retrofitdemo
+package com.sample.demo.myapplication
 
 import android.util.Log
 import okhttp3.OkHttpClient
@@ -6,10 +6,11 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import tw.com.test.retrofitdemo.Config
 
 
-class AppClientManager private constructor() {
-    private val retrofit: Retrofit
+object AppClientManager {
+    val retrofit: Retrofit
     private var logging = HttpLoggingInterceptor(object : HttpLoggingInterceptor.Logger {
         override fun log(message: String) {
             Log.i("interceptor msg", message)
@@ -27,12 +28,6 @@ class AppClientManager private constructor() {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)
                 .build()
-    }
-
-    companion object {
-        private val manager = AppClientManager()
-        val client: Retrofit
-            get() = manager.retrofit
     }
 }
 

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/mvvm_arch_4.iml" filepath="$PROJECT_DIR$/mvvm_arch_4.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mvvm_arch_4.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mvvm_arch_4.app.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="mvvm_arch_4/app" />
+      <module fileurl="file://$PROJECT_DIR$/mvvm_arch_4.iml" filepath="$PROJECT_DIR$/mvvm_arch_4.iml" group="mvvm_arch_4" />
+>>>>>>> 4b45a8f0d444495881b6d97d0ddd6014ca84dd8d
     </modules>
   </component>
 </project>
