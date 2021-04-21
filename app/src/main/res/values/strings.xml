@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">mvvm4</string>
     <string name="uploading">讀取中...</string>
+    <string name="btn_text">call api</string>
 </resources>

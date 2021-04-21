@@ -3,8 +3,13 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea4cfdf4aa6a01cbb51c28dd9c496e2f/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea4cfdf4aa6a01cbb51c28dd9c496e2f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c661ca740541fbae0d0b6699e20abd51/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c661ca740541fbae0d0b6699e20abd51/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c661ca740541fbae0d0b6699e20abd51/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.rxbinding2/rxbinding/2.2.0/2451ae574a8c45f839f95290ab58975ee469ca03/rxbinding-2.2.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.rxbinding2/rxbinding/2.2.0/e41c789dcae348ebf518e3a14a4521ca0a2e1e46/rxbinding-2.2.0-sources.jar!/" />
     </SOURCES>

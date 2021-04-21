@@ -3,8 +3,13 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4dd493757a99da6a78a81d3a05061547/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4dd493757a99da6a78a81d3a05061547/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a39c47757b33f148ecd231338d5facf/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a39c47757b33f148ecd231338d5facf/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a39c47757b33f148ecd231338d5facf/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-viewmodel/2.1.0-alpha-1/c557aeddc205c86f35839bf9b137c55328ec7156/koin-androidx-viewmodel-2.1.0-alpha-1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-viewmodel/2.1.0-alpha-1/523a4a9da5dd71cb538919ed10939a21970a1aa5/koin-androidx-viewmodel-2.1.0-alpha-1-sources.jar!/" />
     </SOURCES>

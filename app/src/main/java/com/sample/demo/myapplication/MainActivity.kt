@@ -10,21 +10,21 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class MainActivity : AppCompatActivity() {
-    private val infoViewModel: InfoViewModel by viewModel()
+    private val infoViewModel by viewModel<InfoViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val dialog = ProgressbarFragment.newInstance(getString(R.string.uploading))
-        infoViewModel.userInfoLiveData.observe(this, Observer {
-            info.text = it
+        infoViewModel.getUserInfo().observe(this, Observer { infoText ->
+            info.text = infoText
         })
         send_data.setOnClickListener {
             infoViewModel.callInfo()
         }
         infoViewModel.loading.observe(this, Observer { loading ->
             if (loading) {
-                supportFragmentManager.let{
+                supportFragmentManager.let {
                     dialog.show(it, "")
                 }
             } else {
